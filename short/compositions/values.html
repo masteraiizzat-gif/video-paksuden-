@@ -1,0 +1,33 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <style>
+
+  :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+    #root { position:absolute; inset:0; overflow:visible; }
+
+    #vals { position:absolute; left:0; top:820px; width:1080px; display:flex; flex-direction:column; align-items:center; gap:18px; }
+    .chip { font-family:"Montserrat",sans-serif; font-weight:900; font-size:54px; letter-spacing:.08em; color:var(--navy);
+            background:var(--gold); padding:14px 36px 12px; border-radius:16px; box-shadow:0 14px 34px rgba(0,0,0,.4); }
+
+  </style>
+  <div id="root" data-composition-id="values" data-width="1080" data-height="1920">
+    <div id="values-clip" class="clip" data-start="0" data-duration="4.45" style="position:absolute;inset:0">
+      <div id="vals">
+        <div id="ch0" class="chip">USAHA</div>
+        <div id="ch1" class="chip">DISIPLIN</div>
+        <div id="ch2" class="chip">KESUNGGUHAN</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ch0", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.42, ease:"back.out(2.2)"}, 0.240);
+    tl.fromTo("#ch1", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.42, ease:"back.out(2.2)"}, 1.960);
+    tl.fromTo("#ch2", {opacity:0, scale:0.4}, {opacity:1, scale:1, duration:0.42, ease:"back.out(2.2)"}, 2.960);
+    tl.to("#vals", {opacity:0, scale:0.92, duration:0.25, ease:"power2.in"}, 4.15);
+    window.__timelines["values"] = tl;
+  </script>
+</template>

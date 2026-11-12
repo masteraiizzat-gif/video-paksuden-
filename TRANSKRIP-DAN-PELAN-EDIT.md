@@ -45,9 +45,26 @@ Sepanjang video: logo (kiri atas) + bendera Malaysia (kanan atas), sari kata Bah
 - Semua jeda janggal (>0.5 s) dipotong; setiap potongan disemak semula dengan transkripsi.
 - **Muzik latar: belum ada** (tiada dalam bahan). Lihat soalan di bawah.
 
-## 4. Perlu keputusan awak
-1. **Muzik latar**: awak nak bagi lagu sendiri, atau saya cari/jana muzik? (Pustaka muzik HyperFrames perlukan log masuk HeyGen.)
+## 4. Versi pendek TikTok / Reels (0:59) — projek `short/`
+
+| Masa | Ucapan | Visual / grafik |
+|---|---|---|
+| 0:00–0:09 | HOOK: "Setiap kejayaan bukan sekadar kemenangan… nama Malaysia di mata dunia." | Montaj sama + "DARI MALAYSIA KE PENTAS DUNIA", riser → impak |
+| 0:09–0:17 | "Nama saya Muhammad Abiddin bin Ahmad, lebih dikenali sebagai Pak Su Den." | Muka + lower third |
+| 0:17–0:27 | (VO3) "Bertemu dan bersaing dengan terapis hebat dari pelbagai negara…" | Gambar kumpulan antarabangsa → kad PERINGKAT ANTARABANGSA |
+| 0:27–0:40 | "Alhamdulillah, dengan usaha, disiplin, kesungguhan, saya diberi peluang… peringkat antarabangsa." | Chip USAHA/DISIPLIN/KESUNGGUHAN → piala, pingat, SEA Championship |
+| 0:40–0:53 | (VO5) "Saya percaya seni urutan tradisional merupakan satu warisan…" | Demo urutan, tajuk WARISAN, gambar kumpulan |
+| 0:53–0:56 | "Inilah perjalanan saya." | Muka + tajuk emas Pak Su Den |
+| 0:56–0:59 | — | Kad akhir logo |
+
+Dibuang untuk versi pendek: asal-usul minat (Video 2), ayat pertama VO3 (elak ulang "peringkat antarabangsa"), dua ayat pertama VO5, "Perjalanan ini masih belum berakhir / terus belajar…" (Video 6).
+
+## 5. Muzik latar
+Dijana secara tempatan dengan MusicGen (orkestra sinematik, strings + piano + perkusi lembut, ~95 bpm, tanpa vokal), digelung dengan crossfade, -16 LUFS. Di bawah suara pada 0.13, naik ke 0.55 pada kad akhir. Muzik dijana sendiri → tiada isu hak cipta. Kalau nak tukar ke lagu sendiri, letak fail di `edit/assets/audio/music_bed.wav` dan jalankan semula build.
+
+## 6. Perlu keputusan awak
+1. ~~Muzik latar~~ — siap (lihat bahagian 5).
 2. **Salam "Assalamualaikum"**: saya buang supaya hook lebih padu. Nak masukkan balik?
-3. **Panjang 2:15**: okey, atau nak versi pendek ~60 s untuk Reels/TikTok?
+3. ~~Versi pendek~~ — siap (lihat bahagian 4).
 4. **Kad akhir**: nak tambah nombor telefon / lokasi / media sosial?
 5. Ejaan nama pada lower third: **MOHD ABIDDIN BIN AHMAD** (ikut poster Newma). Betul?

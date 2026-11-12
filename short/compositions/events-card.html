@@ -1,0 +1,42 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <style>
+
+  :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+    #root { position:absolute; inset:0; overflow:visible; }
+
+    #ev { position:absolute; left:60px; top:470px; width:960px; padding:40px 44px 34px; border-radius:30px;
+          background:rgba(9,18,44,.84); border:2px solid rgba(242,193,78,.65); box-shadow:0 30px 80px rgba(0,0,0,.5); }
+    #ev-title { font-family:"Montserrat",sans-serif; font-weight:900; font-size:50px; color:var(--gold); letter-spacing:.02em; }
+    #ev-sub { font-family:"Montserrat",sans-serif; font-weight:600; font-size:28px; color:rgba(255,255,255,.8); margin-top:6px; margin-bottom:22px; }
+    .ev-row { display:flex; align-items:center; gap:22px; padding:16px 0; border-top:1px solid rgba(255,255,255,.14); }
+    .ev-dot { flex:0 0 22px; height:22px; border-radius:50%; background:var(--gold); box-shadow:0 0 0 6px rgba(242,193,78,.22); }
+    .ev-place { font-family:"Montserrat",sans-serif; font-weight:800; font-size:30px; color:#fff; letter-spacing:.06em; }
+    .ev-name { font-family:"Montserrat",sans-serif; font-weight:500; font-size:28px; color:rgba(255,255,255,.82); margin-top:4px; }
+
+  </style>
+  <div id="root" data-composition-id="events-card" data-width="1080" data-height="1920">
+    <div id="events-card-clip" class="clip" data-start="0" data-duration="7.45" style="position:absolute;inset:0">
+      <div id="ev">
+        <div id="ev-title">PERINGKAT ANTARABANGSA</div>
+        <div id="ev-sub">Pertandingan yang disertai Pak Su Den</div>
+        <div id="ev-r0" class="ev-row"><div class="ev-dot"></div><div><div class="ev-place">SEPANG · MALAYSIA</div><div class="ev-name">SouthEast Asia Massage Championship 2025</div></div></div>
+        <div id="ev-r1" class="ev-row"><div class="ev-dot"></div><div><div class="ev-place">SINGAPURA</div><div class="ev-name">World Holistic Massage Championship 2025</div></div></div>
+        <div id="ev-r2" class="ev-row"><div class="ev-dot"></div><div><div class="ev-place">PHUKET · THAILAND</div><div class="ev-name">Newma Asia Massage Championship 2026</div></div></div>
+        <div id="ev-r3" class="ev-row"><div class="ev-dot"></div><div><div class="ev-place">PENTAS ANTARABANGSA</div><div class="ev-name">Massage Masters Showcase</div></div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ev", {opacity:0, y:60, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.6, ease:"expo.out"}, 0.1);
+    for (let i = 0; i < 4; i++) {
+      tl.fromTo("#ev-r"+i, {opacity:0, x:-40}, {opacity:1, x:0, duration:0.45, ease:"expo.out"}, 0.6 + i*0.55);
+    }
+    tl.to("#ev", {opacity:0, y:-40, duration:0.32, ease:"power3.in"}, 7.05);
+    window.__timelines["events-card"] = tl;
+  </script>
+</template>

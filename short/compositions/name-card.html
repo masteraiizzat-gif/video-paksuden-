@@ -1,0 +1,40 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <style>
+
+  :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+    #root { position:absolute; inset:0; overflow:visible; }
+
+    #nc { position:absolute; left:64px; top:920px; }
+    #nc-kick { display:inline-block; font-family:"Montserrat",sans-serif; font-weight:800; font-size:30px; letter-spacing:.16em;
+               color:var(--navy); background:var(--gold); padding:9px 18px 8px; }
+    #nc-name { margin-top:14px; font-family:"Montserrat",sans-serif; font-weight:900; font-size:62px; line-height:1; color:#fff;
+               text-transform:uppercase; letter-spacing:-0.01em; text-shadow:0 4px 20px rgba(0,0,0,.6); white-space:nowrap; }
+    #nc-role { margin-top:12px; font-family:"Montserrat",sans-serif; font-weight:600; font-size:30px; color:rgba(255,255,255,.92);
+               text-shadow:0 2px 12px rgba(0,0,0,.7); }
+    #nc-line { margin-top:16px; height:6px; width:620px; background:var(--gold); border-radius:3px; transform-origin:0 50%; }
+
+  </style>
+  <div id="root" data-composition-id="name-card" data-width="1080" data-height="1920">
+    <div id="name-card-clip" class="clip" data-start="0" data-duration="6.6" style="position:absolute;inset:0">
+      <div id="nc">
+        <div id="nc-kick">PAK SU DEN</div>
+        <div id="nc-name">Mohd Abiddin Bin Ahmad</div>
+        <div id="nc-role">Pengamal Seni Urutan Tradisional · Malaysia</div>
+        <div id="nc-line"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#nc-kick", {opacity:0, x:-60}, {opacity:1, x:0, duration:0.45, ease:"back.out(1.8)"}, 0.1);
+    tl.fromTo("#nc-name", {opacity:0, y:34}, {opacity:1, y:0, duration:0.5, ease:"expo.out"}, 0.25);
+    tl.fromTo("#nc-role", {opacity:0}, {opacity:1, duration:0.4, ease:"power2.out"}, 0.5);
+    tl.fromTo("#nc-line", {scaleX:0}, {scaleX:1, duration:0.6, ease:"power4.out"}, 0.45);
+    tl.to("#nc", {opacity:0, x:-40, duration:0.3, ease:"power2.in"}, 6.2);
+    window.__timelines["name-card"] = tl;
+  </script>
+</template>

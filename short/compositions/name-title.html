@@ -1,0 +1,35 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <style>
+
+  :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+    #root { position:absolute; inset:0; overflow:visible; }
+
+    #nt { position:absolute; left:0; top:330px; width:1080px; text-align:center; }
+    #nt-word { font-family:"Playfair Display",serif; font-weight:900; font-size:132px; color:var(--gold); line-height:1;
+               text-shadow:0 4px 0 rgba(0,0,0,.5), 0 0 50px rgba(0,0,0,.85); }
+    .nl { display:inline-block; }
+    #nt-rule { margin:18px auto 0; height:4px; width:520px; background:var(--gold); transform-origin:50% 50%; }
+
+  </style>
+  <div id="root" data-composition-id="name-title" data-width="1080" data-height="1920">
+    <div id="name-title-clip" class="clip" data-start="0" data-duration="2.65" style="position:absolute;inset:0">
+      <div id="nt">
+        <div id="nt-word"><span id="nl0" class="nl">P</span><span id="nl1" class="nl">a</span><span id="nl2" class="nl">k</span><span id="nl3" class="nl">&nbsp;</span><span id="nl4" class="nl">S</span><span id="nl5" class="nl">u</span><span id="nl6" class="nl">&nbsp;</span><span id="nl7" class="nl">D</span><span id="nl8" class="nl">e</span><span id="nl9" class="nl">n</span></div>
+        <div id="nt-rule"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    for (let i = 0; i < 10; i++) {
+      tl.fromTo("#nl"+i, {opacity:0.25, filter:"blur(4px)"}, {opacity:1, filter:"blur(0px)", duration:0.25, ease:"power2.out"}, 0.15 + i*0.07);
+    }
+    tl.fromTo("#nt-rule", {scaleX:0}, {scaleX:1, duration:0.7, ease:"power4.out"}, 0.6);
+    tl.to("#nt", {opacity:0, duration:0.25, ease:"power2.in"}, 2.350);
+    window.__timelines["name-title"] = tl;
+  </script>
+</template>

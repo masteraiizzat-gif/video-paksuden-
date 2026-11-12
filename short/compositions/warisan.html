@@ -1,0 +1,38 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <style>
+
+  :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+    #root { position:absolute; inset:0; overflow:visible; }
+
+    #wr { position:absolute; left:0; top:300px; width:1080px; text-align:center; }
+    #wr-top, #wr-bot { font-family:"Montserrat",sans-serif; font-weight:700; font-size:36px; letter-spacing:.3em; color:#fff;
+                       text-shadow:0 2px 14px rgba(0,0,0,.7); }
+    #wr-word { font-family:"Playfair Display",serif; font-weight:900; font-size:170px; line-height:1.05; color:var(--gold);
+               text-shadow:0 8px 40px rgba(0,0,0,.6); letter-spacing:.02em; }
+    .wl { display:inline-block; }
+
+  </style>
+  <div id="root" data-composition-id="warisan" data-width="1080" data-height="1920">
+    <div id="warisan-clip" class="clip" data-start="0" data-duration="3.7" style="position:absolute;inset:0">
+      <div id="wr">
+        <div id="wr-top">SENI URUTAN TRADISIONAL</div>
+        <div id="wr-word"><span id="wl0" class="wl">W</span><span id="wl1" class="wl">A</span><span id="wl2" class="wl">R</span><span id="wl3" class="wl">I</span><span id="wl4" class="wl">S</span><span id="wl5" class="wl">A</span><span id="wl6" class="wl">N</span></div>
+        <div id="wr-bot">UNTUK DUNIA</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#wr-top", {opacity:0}, {opacity:1, duration:0.3, ease:"power2.out"}, 0.05);
+    for (let i = 0; i < 7; i++) {
+      tl.fromTo("#wl"+i, {opacity:0.0, y:30, filter:"blur(6px)"}, {opacity:1, y:0, filter:"blur(0px)", duration:0.35, ease:"expo.out"}, 0.2 + i*0.06);
+    }
+    tl.fromTo("#wr-bot", {opacity:0}, {opacity:1, duration:0.3, ease:"power2.out"}, 0.8);
+    tl.to("#wr", {opacity:0, filter:"blur(8px)", duration:0.25, ease:"power2.in"}, 3.4);
+    window.__timelines["warisan"] = tl;
+  </script>
+</template>

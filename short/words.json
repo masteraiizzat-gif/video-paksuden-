@@ -1,0 +1,458 @@
+[
+{
+"text": "setiap",
+"start": 0.1,
+"end": 0.38,
+"scene": "hook"
+},
+{
+"text": "kejayaan",
+"start": 0.38,
+"end": 1.14,
+"scene": "hook"
+},
+{
+"text": "bukan",
+"start": 1.14,
+"end": 1.48,
+"scene": "hook"
+},
+{
+"text": "sekadar",
+"start": 1.48,
+"end": 2.14,
+"scene": "hook"
+},
+{
+"text": "kemenangan",
+"start": 2.14,
+"end": 2.8,
+"scene": "hook"
+},
+{
+"text": "tetapi",
+"start": 2.8,
+"end": 4.38,
+"scene": "hook"
+},
+{
+"text": "satu",
+"start": 4.38,
+"end": 4.92,
+"scene": "hook"
+},
+{
+"text": "penghormatan",
+"start": 4.92,
+"end": 5.84,
+"scene": "hook"
+},
+{
+"text": "untuk",
+"start": 5.84,
+"end": 6.32,
+"scene": "hook"
+},
+{
+"text": "membawa",
+"start": 6.32,
+"end": 6.92,
+"scene": "hook"
+},
+{
+"text": "nama",
+"start": 6.92,
+"end": 7.3,
+"scene": "hook"
+},
+{
+"text": "Malaysia",
+"start": 7.3,
+"end": 7.82,
+"scene": "hook"
+},
+{
+"text": "di",
+"start": 7.82,
+"end": 8.24,
+"scene": "hook"
+},
+{
+"text": "mata",
+"start": 8.24,
+"end": 8.54,
+"scene": "hook"
+},
+{
+"text": "dunia.",
+"start": 8.54,
+"end": 8.82,
+"scene": "hook"
+},
+{
+"text": "Nama",
+"start": 9.38,
+"end": 9.66,
+"scene": "s1"
+},
+{
+"text": "saya",
+"start": 9.66,
+"end": 10.16,
+"scene": "s1"
+},
+{
+"text": "Muhammad",
+"start": 10.16,
+"end": 10.78,
+"scene": "s1"
+},
+{
+"text": "Abiddin",
+"start": 10.78,
+"end": 11.5,
+"scene": "s1"
+},
+{
+"text": "bin",
+"start": 11.5,
+"end": 11.94,
+"scene": "s1"
+},
+{
+"text": "Ahmad.",
+"start": 11.94,
+"end": 12.8,
+"scene": "s1"
+},
+{
+"text": "Lebih",
+"start": 13.16,
+"end": 13.34,
+"scene": "s1"
+},
+{
+"text": "dikenali",
+"start": 13.34,
+"end": 14.04,
+"scene": "s1"
+},
+{
+"text": "sebagai",
+"start": 14.04,
+"end": 14.86,
+"scene": "s1"
+},
+{
+"text": "Pak",
+"start": 14.86,
+"end": 15.38,
+"scene": "s1"
+},
+{
+"text": "Su Den.",
+"start": 15.38,
+"end": 16.92,
+"scene": "s1"
+},
+{
+"text": "Bertemu",
+"start": 17.13,
+"end": 17.73,
+"scene": "s3"
+},
+{
+"text": "dan",
+"start": 17.73,
+"end": 18.31,
+"scene": "s3"
+},
+{
+"text": "bersaing",
+"start": 18.31,
+"end": 19.11,
+"scene": "s3"
+},
+{
+"text": "dengan",
+"start": 19.11,
+"end": 19.51,
+"scene": "s3"
+},
+{
+"text": "terapis",
+"start": 19.51,
+"end": 19.99,
+"scene": "s3"
+},
+{
+"text": "hebat",
+"start": 19.99,
+"end": 20.61,
+"scene": "s3"
+},
+{
+"text": "dari",
+"start": 20.61,
+"end": 21.03,
+"scene": "s3"
+},
+{
+"text": "pelbagai",
+"start": 21.03,
+"end": 21.67,
+"scene": "s3"
+},
+{
+"text": "negara",
+"start": 21.67,
+"end": 22.61,
+"scene": "s3"
+},
+{
+"text": "merupakan",
+"start": 22.61,
+"end": 23.45,
+"scene": "s3"
+},
+{
+"text": "pengalaman",
+"start": 23.45,
+"end": 24.31,
+"scene": "s3"
+},
+{
+"text": "yang",
+"start": 24.31,
+"end": 24.77,
+"scene": "s3"
+},
+{
+"text": "sangat",
+"start": 24.77,
+"end": 25.19,
+"scene": "s3"
+},
+{
+"text": "bermakna",
+"start": 25.19,
+"end": 25.93,
+"scene": "s3"
+},
+{
+"text": "buat",
+"start": 25.93,
+"end": 26.31,
+"scene": "s3"
+},
+{
+"text": "saya.",
+"start": 26.31,
+"end": 26.65,
+"scene": "s3"
+},
+{
+"text": "Alhamdulillah,",
+"start": 27.01,
+"end": 28.05,
+"scene": "s4"
+},
+{
+"text": "dengan",
+"start": 28.35,
+"end": 28.63,
+"scene": "s4"
+},
+{
+"text": "usaha,",
+"start": 28.63,
+"end": 29.89,
+"scene": "s4"
+},
+{
+"text": "disiplin,",
+"start": 30.35,
+"end": 31.13,
+"scene": "s4"
+},
+{
+"text": "kesungguhan,",
+"start": 31.35,
+"end": 32.7,
+"scene": "s4"
+},
+{
+"text": "saya",
+"start": 32.92,
+"end": 33.64,
+"scene": "s4"
+},
+{
+"text": "diberi",
+"start": 33.64,
+"end": 34.54,
+"scene": "s4"
+},
+{
+"text": "peluang",
+"start": 34.54,
+"end": 35.22,
+"scene": "s4"
+},
+{
+"text": "untuk",
+"start": 35.22,
+"end": 35.64,
+"scene": "s4"
+},
+{
+"text": "meraih",
+"start": 35.64,
+"end": 36.16,
+"scene": "s4"
+},
+{
+"text": "beberapa",
+"start": 36.16,
+"end": 36.84,
+"scene": "s4"
+},
+{
+"text": "pencapaian",
+"start": 36.84,
+"end": 37.8,
+"scene": "s4"
+},
+{
+"text": "di",
+"start": 37.8,
+"end": 38.18,
+"scene": "s4"
+},
+{
+"text": "peringkat",
+"start": 38.18,
+"end": 38.6,
+"scene": "s4"
+},
+{
+"text": "antarabangsa.",
+"start": 38.6,
+"end": 39.8,
+"scene": "s4"
+},
+{
+"text": "Saya",
+"start": 39.97,
+"end": 40.46,
+"scene": "s5"
+},
+{
+"text": "percaya",
+"start": 40.46,
+"end": 41.22,
+"scene": "s5"
+},
+{
+"text": "seni",
+"start": 41.22,
+"end": 41.64,
+"scene": "s5"
+},
+{
+"text": "urutan",
+"start": 41.64,
+"end": 42.22,
+"scene": "s5"
+},
+{
+"text": "tradisional",
+"start": 42.22,
+"end": 43.08,
+"scene": "s5"
+},
+{
+"text": "merupakan",
+"start": 43.08,
+"end": 43.96,
+"scene": "s5"
+},
+{
+"text": "satu",
+"start": 43.96,
+"end": 44.58,
+"scene": "s5"
+},
+{
+"text": "warisan",
+"start": 44.58,
+"end": 45.22,
+"scene": "s5"
+},
+{
+"text": "yang",
+"start": 45.22,
+"end": 45.76,
+"scene": "s5"
+},
+{
+"text": "perlu",
+"start": 45.76,
+"end": 46.24,
+"scene": "s5"
+},
+{
+"text": "dipelihara,",
+"start": 46.24,
+"end": 47.52,
+"scene": "s5"
+},
+{
+"text": "dikembangkan",
+"start": 48.04,
+"end": 49.2,
+"scene": "s5"
+},
+{
+"text": "dan",
+"start": 49.2,
+"end": 49.8,
+"scene": "s5"
+},
+{
+"text": "diperkenalkan",
+"start": 50.88,
+"end": 51.78,
+"scene": "s5"
+},
+{
+"text": "kepada",
+"start": 51.78,
+"end": 52.4,
+"scene": "s5"
+},
+{
+"text": "dunia.",
+"start": 52.4,
+"end": 52.84,
+"scene": "s5"
+},
+{
+"text": "Inilah",
+"start": 53.28,
+"end": 53.8,
+"scene": "s6"
+},
+{
+"text": "perjalanan",
+"start": 53.8,
+"end": 55.2,
+"scene": "s6"
+},
+{
+"text": "saya.",
+"start": 55.2,
+"end": 55.54,
+"scene": "s6"
+}
+]

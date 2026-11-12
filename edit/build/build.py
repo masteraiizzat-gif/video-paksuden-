@@ -50,7 +50,7 @@ BROLL = [
     ("b24", "i", "img/wa_250126_1742.jpg", 95.40, 98.30, 0, 50),
     ("b25", "c", "img/DT6A2738.jpg", 98.30, 101.40, 0, 50),
     ("b26", "v", "video/wa_082520.mp4", 104.40, 108.90, 38.5, 50),
-    ("b27", "v", "video/v20s.mp4", 108.90, 111.46, 20.0, 50),
+    ("b27", "v", "video/wa_191412.mp4", 108.90, 111.46, 46.0, 50),
     # S6 closing
     ("b28", "v", "video/wa_082520.mp4", 116.40, 118.60, 4.0, 50),
     ("b29", "v", "video/v20s.mp4", 118.60, 120.40, 9.0, 56),
@@ -113,6 +113,11 @@ GOLD_WORDS = {"malaysia", "dunia", "penghormatan", "su den", "tradisional", "min
               "antarabangsa", "negara", "pencapaian", "ilmu", "warisan", "belajar", "berusaha",
               "kejayaan", "generasi"}
 
+COMP_DIR = "compositions"      # where this variant's scene files go
+OUT_INDEX = "index.html"       # this variant's root composition
+VALUE_HITS = None              # override chip times (output seconds)
+MUSIC = None                   # (src, media_start, volume_under_voice, volume_end) or None
+
 COMMON_CSS = """
   :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -156,19 +161,26 @@ def index_html():
       </div>''')
     # graphics hosts
     for (gid, st, d) in GFX:
-        el.append(f'''      <div id="{gid}" class="gfx" data-composition-id="{gid}" data-composition-src="compositions/{gid}.html"
+        el.append(f'''      <div id="{gid}" class="gfx" data-composition-id="{gid}" data-composition-src="{COMP_DIR}/{gid}.html"
         data-start="{f(st)}" data-duration="{f(round(d,3))}" data-track-index="4" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>''')
-    el.append(f'''      <div id="captions" class="gfx" data-composition-id="captions" data-composition-src="compositions/captions.html"
+    el.append(f'''      <div id="captions" class="gfx" data-composition-id="captions" data-composition-src="{COMP_DIR}/captions.html"
         data-start="0" data-duration="{f(AEND)}" data-track-index="5" data-track-kind="captions" data-width="{W}" data-height="{H}"></div>''')
-    el.append(f'''      <div id="brand" class="gfx" data-composition-id="brand" data-composition-src="compositions/brand.html"
+    el.append(f'''      <div id="brand" class="gfx" data-composition-id="brand" data-composition-src="{COMP_DIR}/brand.html"
         data-start="0" data-duration="{f(AEND)}" data-track-index="6" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>''')
-    el.append(f'''      <div id="endcard" class="gfx" data-composition-id="endcard" data-composition-src="compositions/endcard.html"
+    el.append(f'''      <div id="endcard" class="gfx" data-composition-id="endcard" data-composition-src="{COMP_DIR}/endcard.html"
         data-start="{f(AEND)}" data-duration="{f(END_CARD)}" data-track-index="7" data-track-kind="graphics" data-width="{W}" data-height="{H}"></div>''')
     for (sid, name, st, vol) in SFX:
         dur = min(SFX_DUR[name], TOTAL - st)
         trk = 11 + (SFX.index((sid, name, st, vol)) % 3)
         el.append(f'''      <audio id="{sid}" src="assets/sfx/{name}.mp3" data-start="{f(round(st,3))}" data-duration="{f(round(dur,3))}" data-volume="{vol}" data-track-index="{trk}"></audio>''')
 
+    if MUSIC:
+        msrc, mstart, vbed, vend = MUSIC
+        # one bed across the whole film; a volume lane lifts it for the hook tail and the end card
+        pts = [{"t": 0, "v": vbed}, {"t": round(AEND - 0.4, 3), "v": vbed}, {"t": round(AEND + 0.3, 3), "v": vend}, {"t": round(TOTAL, 3), "v": vend}]
+        lane = json.dumps({"version": 1, "lanes": [{"target": "volume", "points": pts}]})
+        el.append(f'''      <audio id="music" src="assets/{msrc}" data-start="0" data-duration="{f(TOTAL)}" data-media-start="{f(mstart)}" data-volume="1"
+        data-fade-in="0.4" data-fade-out="1.2" data-automation='{lane}' data-track-index="14"></audio>''')
     # root timeline: settle-in moves for B-roll (on wrappers / children, never the timed media)
     tw = []
     for (bid, kind, src, st, en, ms, pos) in BROLL:
@@ -436,7 +448,7 @@ def events_html():
 # ================================================================= values chips (S4)
 def values_html():
     base = GFX_START["values"]
-    hits = [remap(70.44), remap(72.16), remap(73.16)]
+    hits = VALUE_HITS if VALUE_HITS else [remap(70.44), remap(72.16), remap(73.16)]
     css = """
     #vals { position:absolute; left:0; top:820px; width:1080px; display:flex; flex-direction:column; align-items:center; gap:18px; }
     .chip { font-family:"Montserrat",sans-serif; font-weight:900; font-size:54px; letter-spacing:.08em; color:var(--navy);
@@ -525,22 +537,25 @@ def endcard_html():
 
 def main():
     os.makedirs(os.path.join(ROOT, "compositions"), exist_ok=True)
+    os.makedirs(os.path.join(ROOT, COMP_DIR), exist_ok=True)
     out = {
-        "index.html": index_html(),
-        "compositions/captions.html": captions_html(),
-        "compositions/brand.html": brand_html(),
-        "compositions/hook-title.html": hook_html(),
-        "compositions/name-card.html": namecard_html(),
-        "compositions/events-card.html": events_html(),
-        "compositions/values.html": values_html(),
-        "compositions/warisan.html": warisan_html(),
-        "compositions/name-title.html": nametitle_html(),
-        "compositions/endcard.html": endcard_html(),
+        OUT_INDEX: index_html(),
+        f"{COMP_DIR}/captions.html": captions_html(),
+        f"{COMP_DIR}/brand.html": brand_html(),
+        f"{COMP_DIR}/hook-title.html": hook_html(),
+        f"{COMP_DIR}/name-card.html": namecard_html(),
+        f"{COMP_DIR}/events-card.html": events_html(),
+        f"{COMP_DIR}/values.html": values_html(),
+        f"{COMP_DIR}/warisan.html": warisan_html(),
+        f"{COMP_DIR}/name-title.html": nametitle_html(),
+        f"{COMP_DIR}/endcard.html": endcard_html(),
     }
     for p, s in out.items():
         open(os.path.join(ROOT, p), "w").write(s)
-    json.dump(words, open(os.path.join(ROOT, "build", "words.json"), "w"), ensure_ascii=False, indent=0)
+    json.dump(words, open(os.path.join(ROOT, "words.json"), "w"), ensure_ascii=False, indent=0)
     print("total", TOTAL, "segments", len(segs), "words", len(words))
 
 if __name__ == "__main__":
+    if os.path.exists(os.path.join(ROOT, "assets", "audio", "music_bed.wav")):
+        MUSIC = ("audio/music_bed.wav", 0, 0.13, 0.55)
     main()

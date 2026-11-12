@@ -51,9 +51,9 @@ def words_for(audio_src):
     d = json.load(open(os.path.join(TR, audio_src + ".json")))
     return [w for s in d for w in s["words"]]
 
-def build():
+def build(edl=None):
     t = 0.0; segs = []; words = []
-    for i, (scene, vsrc, vin, asrc, ain, aout) in enumerate(EDL):
+    for i, (scene, vsrc, vin, asrc, ain, aout) in enumerate(edl or EDL):
         dur = round(aout - ain, 3)
         segs.append(dict(id=f"a{i:02d}", scene=scene, vsrc=vsrc, vin=vin, asrc=asrc, ain=ain, start=round(t, 3), dur=dur))
         for w in words_for(asrc):
