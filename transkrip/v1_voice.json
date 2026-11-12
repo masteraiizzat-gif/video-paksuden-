@@ -1,0 +1,160 @@
+[
+ {
+  "start": 1.7799999999999998,
+  "end": 5.0,
+  "text": "Assalamualaikum dan Salam sejahtera.",
+  "words": [
+   {
+    "s": 1.7799999999999998,
+    "e": 3.1,
+    "w": " Assalamualaikum"
+   },
+   {
+    "s": 3.1,
+    "e": 3.48,
+    "w": " dan"
+   },
+   {
+    "s": 3.48,
+    "e": 3.86,
+    "w": " Salam"
+   },
+   {
+    "s": 3.86,
+    "e": 5.0,
+    "w": " sejahtera."
+   }
+  ]
+ },
+ {
+  "start": 6.16,
+  "end": 9.58,
+  "text": "Nama saya Muhammad Abidin bin Ahmad.",
+  "words": [
+   {
+    "s": 6.16,
+    "e": 6.44,
+    "w": " Nama"
+   },
+   {
+    "s": 6.44,
+    "e": 6.94,
+    "w": " saya"
+   },
+   {
+    "s": 6.94,
+    "e": 7.56,
+    "w": " Muhammad"
+   },
+   {
+    "s": 7.56,
+    "e": 8.28,
+    "w": " Abidin"
+   },
+   {
+    "s": 8.28,
+    "e": 8.72,
+    "w": " bin"
+   },
+   {
+    "s": 8.72,
+    "e": 9.58,
+    "w": " Ahmad."
+   }
+  ]
+ },
+ {
+  "start": 10.36,
+  "end": 14.12,
+  "text": "Lebih dikenali sebagai Pak Sudin.",
+  "words": [
+   {
+    "s": 10.36,
+    "e": 10.54,
+    "w": " Lebih"
+   },
+   {
+    "s": 10.54,
+    "e": 11.24,
+    "w": " dikenali"
+   },
+   {
+    "s": 11.24,
+    "e": 12.06,
+    "w": " sebagai"
+   },
+   {
+    "s": 12.06,
+    "e": 12.58,
+    "w": " Pak"
+   },
+   {
+    "s": 12.58,
+    "e": 14.12,
+    "w": " Sudin."
+   }
+  ]
+ },
+ {
+  "start": 15.2,
+  "end": 22.38,
+  "text": "Saya berasal dari Malaysia dan merupakan seorang peramal seni urutan tradisional.",
+  "words": [
+   {
+    "s": 15.2,
+    "e": 15.46,
+    "w": " Saya"
+   },
+   {
+    "s": 15.46,
+    "e": 16.18,
+    "w": " berasal"
+   },
+   {
+    "s": 16.18,
+    "e": 16.68,
+    "w": " dari"
+   },
+   {
+    "s": 16.68,
+    "e": 17.26,
+    "w": " Malaysia"
+   },
+   {
+    "s": 17.26,
+    "e": 17.98,
+    "w": " dan"
+   },
+   {
+    "s": 17.98,
+    "e": 18.68,
+    "w": " merupakan"
+   },
+   {
+    "s": 18.68,
+    "e": 19.16,
+    "w": " seorang"
+   },
+   {
+    "s": 19.16,
+    "e": 20.56,
+    "w": " peramal"
+   },
+   {
+    "s": 20.56,
+    "e": 21.02,
+    "w": " seni"
+   },
+   {
+    "s": 21.02,
+    "e": 21.64,
+    "w": " urutan"
+   },
+   {
+    "s": 21.64,
+    "e": 22.38,
+    "w": " tradisional."
+   }
+  ]
+ }
+]

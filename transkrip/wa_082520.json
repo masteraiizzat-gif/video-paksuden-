@@ -1,0 +1,61 @@
+[
+ {
+  "start": 23.400000000000002,
+  "end": 29.98,
+  "text": "divide akar dan menggunakan ukuran",
+  "words": [
+   {
+    "s": 23.400000000000002,
+    "e": 24.8,
+    "w": " divide"
+   },
+   {
+    "s": 24.8,
+    "e": 26.2,
+    "w": " akar"
+   },
+   {
+    "s": 26.2,
+    "e": 26.36,
+    "w": " dan"
+   },
+   {
+    "s": 26.36,
+    "e": 29.94,
+    "w": " menggunakan"
+   },
+   {
+    "s": 29.94,
+    "e": 29.98,
+    "w": " ukuran"
+   }
+  ]
+ },
+ {
+  "start": 38.66,
+  "end": 40.8,
+  "text": "Terima kasih kerana menonton!",
+  "words": [
+   {
+    "s": 38.66,
+    "e": 39.5,
+    "w": " Terima"
+   },
+   {
+    "s": 39.5,
+    "e": 40.34,
+    "w": " kasih"
+   },
+   {
+    "s": 40.34,
+    "e": 40.76,
+    "w": " kerana"
+   },
+   {
+    "s": 40.76,
+    "e": 40.8,
+    "w": " menonton!"
+   }
+  ]
+ }
+]

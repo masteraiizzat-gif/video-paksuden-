@@ -1,0 +1,148 @@
+[
+ {
+  "start": 2.439999999999998,
+  "end": 6.0,
+  "text": "Perjalanan ini masih belum berakhir.",
+  "words": [
+   {
+    "s": 2.439999999999998,
+    "e": 3.68,
+    "w": " Perjalanan"
+   },
+   {
+    "s": 3.68,
+    "e": 4.06,
+    "w": " ini"
+   },
+   {
+    "s": 4.06,
+    "e": 4.54,
+    "w": " masih"
+   },
+   {
+    "s": 4.54,
+    "e": 4.98,
+    "w": " belum"
+   },
+   {
+    "s": 4.98,
+    "e": 6.0,
+    "w": " berakhir."
+   }
+  ]
+ },
+ {
+  "start": 7.34,
+  "end": 17.34,
+  "text": "Saya akan terus belajar, terus berusaha, terus membawa nama Malaysia melalui seni urutan tradisional.",
+  "words": [
+   {
+    "s": 7.34,
+    "e": 7.6,
+    "w": " Saya"
+   },
+   {
+    "s": 7.6,
+    "e": 8.36,
+    "w": " akan"
+   },
+   {
+    "s": 8.36,
+    "e": 9.06,
+    "w": " terus"
+   },
+   {
+    "s": 9.06,
+    "e": 9.98,
+    "w": " belajar,"
+   },
+   {
+    "s": 10.54,
+    "e": 10.98,
+    "w": " terus"
+   },
+   {
+    "s": 10.98,
+    "e": 12.02,
+    "w": " berusaha,"
+   },
+   {
+    "s": 12.34,
+    "e": 12.64,
+    "w": " terus"
+   },
+   {
+    "s": 12.64,
+    "e": 13.5,
+    "w": " membawa"
+   },
+   {
+    "s": 13.5,
+    "e": 13.94,
+    "w": " nama"
+   },
+   {
+    "s": 13.94,
+    "e": 14.56,
+    "w": " Malaysia"
+   },
+   {
+    "s": 14.56,
+    "e": 15.42,
+    "w": " melalui"
+   },
+   {
+    "s": 15.42,
+    "e": 15.82,
+    "w": " seni"
+   },
+   {
+    "s": 15.82,
+    "e": 16.44,
+    "w": " urutan"
+   },
+   {
+    "s": 16.44,
+    "e": 17.34,
+    "w": " tradisional."
+   }
+  ]
+ },
+ {
+  "start": 17.98,
+  "end": 23.32,
+  "text": "Saya Pak Sultan. Inilah perjalanan saya.",
+  "words": [
+   {
+    "s": 17.98,
+    "e": 18.76,
+    "w": " Saya"
+   },
+   {
+    "s": 18.76,
+    "e": 19.48,
+    "w": " Pak"
+   },
+   {
+    "s": 19.48,
+    "e": 20.08,
+    "w": " Sultan."
+   },
+   {
+    "s": 21.06,
+    "e": 21.58,
+    "w": " Inilah"
+   },
+   {
+    "s": 21.58,
+    "e": 22.98,
+    "w": " perjalanan"
+   },
+   {
+    "s": 22.98,
+    "e": 23.32,
+    "w": " saya."
+   }
+  ]
+ }
+]

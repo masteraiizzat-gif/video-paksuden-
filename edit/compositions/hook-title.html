@@ -1,0 +1,42 @@
+<template>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <style>
+
+  :root { --navy:#0b1838; --blue:#1e6fd9; --gold:#f2c14e; --ink:#ffffff; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+    #root { position:absolute; inset:0; overflow:visible; }
+
+    #hk { position:absolute; left:0; top:330px; width:1080px; text-align:center; }
+    #hk-kicker { display:inline-block; font-family:"Montserrat",sans-serif; font-weight:800; font-size:30px; letter-spacing:.22em;
+                 color:var(--navy); background:var(--gold); padding:10px 22px 9px; border-radius:6px; }
+    .hk-line { font-family:"Montserrat",sans-serif; font-weight:900; font-size:96px; line-height:1.0; color:#fff; letter-spacing:-0.02em;
+               text-transform:uppercase; text-shadow:0 6px 0 rgba(0,0,0,.45), 0 0 40px rgba(0,0,0,.5); }
+    #hk-l1 { margin-top:26px; }
+    .hk-line .gold { color:var(--gold); }
+    .hk-word { display:inline-block; }
+
+  </style>
+  <div id="root" data-composition-id="hook-title" data-width="1080" data-height="1920">
+    <div id="hook-title-clip" class="clip" data-start="0" data-duration="8.97" style="position:absolute;inset:0">
+      <div id="hk">
+        <div id="hk-kicker">WORLD CHAMPION 2025</div>
+        <div id="hk-l1" class="hk-line"><span id="hk-w1" class="hk-word">Dari</span> <span id="hk-w2" class="hk-word gold">Malaysia</span></div>
+        <div id="hk-l2" class="hk-line"><span id="hk-w3" class="hk-word">ke</span> <span id="hk-w4" class="hk-word">pentas</span> <span id="hk-w5" class="hk-word gold">dunia</span></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#hk-kicker", {opacity:0, y:-24}, {opacity:1, y:0, duration:0.45, ease:"expo.out"}, 0.05);
+    ["#hk-w1","#hk-w2","#hk-w3","#hk-w4"].forEach((s,i) => {
+      tl.fromTo(s, {opacity:0, filter:"blur(8px)"}, {opacity:1, filter:"blur(0px)", duration:0.16, ease:"power3.out"}, 0.12 + i*0.08);
+    });
+    // "dunia" lands with the spoken word + impact
+    tl.fromTo("#hk-w5", {opacity:0, scale:1.6, filter:"blur(10px)"}, {opacity:1, scale:1, filter:"blur(0px)", duration:0.32, ease:"expo.out"}, 8.50);
+    tl.set("#hk-w5", {opacity:0.0}, 0);
+    tl.to("#hk", {opacity:0, y:-30, filter:"blur(6px)", duration:0.22, ease:"power3.in"}, 8.72);
+    window.__timelines["hook-title"] = tl;
+  </script>
+</template>

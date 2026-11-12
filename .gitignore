@@ -1,0 +1,7 @@
+node_modules/
+bahan/
+preview/
+edit/assets/video/
+edit/assets/audio/
+edit/.hyperframes/
+__pycache__/

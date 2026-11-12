@@ -1,0 +1,230 @@
+[
+ {
+  "start": 30.0,
+  "end": 31.74,
+  "text": "Ia telah mencapai banyak pemeriksaan",
+  "words": [
+   {
+    "s": 30.0,
+    "e": 30.3,
+    "w": " Ia"
+   },
+   {
+    "s": 30.3,
+    "e": 30.32,
+    "w": " telah"
+   },
+   {
+    "s": 30.32,
+    "e": 30.32,
+    "w": " mencapai"
+   },
+   {
+    "s": 30.32,
+    "e": 30.6,
+    "w": " banyak"
+   },
+   {
+    "s": 30.6,
+    "e": 31.74,
+    "w": " pemeriksaan"
+   }
+  ]
+ },
+ {
+  "start": 31.74,
+  "end": 34.4,
+  "text": "Ia telah mencapai beberapa pemeriksaan",
+  "words": [
+   {
+    "s": 31.74,
+    "e": 32.92,
+    "w": " Ia"
+   },
+   {
+    "s": 32.92,
+    "e": 33.14,
+    "w": " telah"
+   },
+   {
+    "s": 33.14,
+    "e": 33.22,
+    "w": " mencapai"
+   },
+   {
+    "s": 33.22,
+    "e": 33.64,
+    "w": " beberapa"
+   },
+   {
+    "s": 33.64,
+    "e": 34.4,
+    "w": " pemeriksaan"
+   }
+  ]
+ },
+ {
+  "start": 34.4,
+  "end": 38.54,
+  "text": "Dan ini adalah pemeriksaan yang indah",
+  "words": [
+   {
+    "s": 34.4,
+    "e": 35.62,
+    "w": " Dan"
+   },
+   {
+    "s": 35.62,
+    "e": 35.84,
+    "w": " ini"
+   },
+   {
+    "s": 35.84,
+    "e": 36.06,
+    "w": " adalah"
+   },
+   {
+    "s": 36.06,
+    "e": 38.5,
+    "w": " pemeriksaan"
+   },
+   {
+    "s": 38.5,
+    "e": 38.5,
+    "w": " yang"
+   },
+   {
+    "s": 38.5,
+    "e": 38.54,
+    "w": " indah"
+   }
+  ]
+ },
+ {
+  "start": 49.16,
+  "end": 52.0,
+  "text": "Terima kasih, Surabaya",
+  "words": [
+   {
+    "s": 49.16,
+    "e": 50.0,
+    "w": " Terima"
+   },
+   {
+    "s": 50.0,
+    "e": 50.84,
+    "w": " kasih,"
+   },
+   {
+    "s": 51.2,
+    "e": 52.0,
+    "w": " Surabaya"
+   }
+  ]
+ },
+ {
+  "start": 53.86,
+  "end": 54.7,
+  "text": "Pemeriksaan silver",
+  "words": [
+   {
+    "s": 53.86,
+    "e": 54.7,
+    "w": " Pemeriksaan"
+   },
+   {
+    "s": 54.7,
+    "e": 54.7,
+    "w": " silver"
+   }
+  ]
+ },
+ {
+  "start": 55.760000000000005,
+  "end": 58.1,
+  "text": "Ia tetap dalam tradisi asing",
+  "words": [
+   {
+    "s": 55.760000000000005,
+    "e": 56.6,
+    "w": " Ia"
+   },
+   {
+    "s": 56.6,
+    "e": 56.96,
+    "w": " tetap"
+   },
+   {
+    "s": 56.96,
+    "e": 56.98,
+    "w": " dalam"
+   },
+   {
+    "s": 56.98,
+    "e": 58.1,
+    "w": " tradisi"
+   },
+   {
+    "s": 58.1,
+    "e": 58.1,
+    "w": " asing"
+   }
+  ]
+ },
+ {
+  "start": 58.1,
+  "end": 60.0,
+  "text": "Pemeriksaan silver",
+  "words": [
+   {
+    "s": 58.1,
+    "e": 60.0,
+    "w": " Pemeriksaan"
+   },
+   {
+    "s": 60.0,
+    "e": 60.0,
+    "w": " silver"
+   }
+  ]
+ },
+ {
+  "start": 60.0,
+  "end": 62.12,
+  "text": "Pemeriksaan asing menuju",
+  "words": [
+   {
+    "s": 60.0,
+    "e": 61.5,
+    "w": " Pemeriksaan"
+   },
+   {
+    "s": 61.5,
+    "e": 61.5,
+    "w": " asing"
+   },
+   {
+    "s": 61.5,
+    "e": 62.12,
+    "w": " menuju"
+   }
+  ]
+ },
+ {
+  "start": 64.89999999999999,
+  "end": 67.7,
+  "text": "Nutsnafa Santarapun",
+  "words": [
+   {
+    "s": 64.89999999999999,
+    "e": 66.3,
+    "w": " Nutsnafa"
+   },
+   {
+    "s": 66.3,
+    "e": 67.7,
+    "w": " Santarapun"
+   }
+  ]
+ }
+]
